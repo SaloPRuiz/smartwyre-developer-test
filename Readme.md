@@ -1,26 +1,15 @@
-# Smartwyre Developer Test Instructions
+# Smartwyre Developer Test - Solved
 
-In the 'RebateService.cs' file you will find a method for calculating a rebate. At a high level the steps for calculating a rebate are:
+Hello, I present here the exercise solved following the instructions indicated in the readme.
 
- 1. Lookup the rebate that the request is being made against.
- 2. Lookup the product that the request is being made against.
- 2. Check that the rebate and request are valid to calculate the incentive type rebate.
- 3. Store the rebate calculation.
+When refactoring, the SOLID principles were prioritized, making the code easy to read and making its testability simple. Consideration was also given to the scalability of the solution for when new types of incentives are introduced.
 
-What we'd like you to do is refactor the code with the following things in mind:
+Mainly the Builder pattern was followed, with the implementation of interfaces, dependency injection and maintaining the Single Responsibility Principle.
 
- - Adherence to SOLID principles
- - Testability
- - Readability
- - Currently there are 3 known incentive types. In the future the business will want to add many more incentive types. Your solution should make it easy for developers to add new incentive types in the future.
+Test data was used to implement the working of the class Hello, I present here the exercise solved following the instructions indicated in the readme.
 
-We’d also like you to 
- - Add some unit tests to the Smartwyre.DeveloperTest.Tests project to show how you would test the code that you’ve produced 
- - Run the RebateService from the Smartwyre.DeveloperTest.Runner console application accepting inputs
+When refactoring, the SOLID principles were prioritized, making the code easy to read and making its testability simple. Consideration was also given to the scalability of the solution for when new types of incentives are introduced.
 
-The only specific 'rules' are:
+Mainly the Builder pattern was followed, with the implementation of interfaces, dependency injection and maintaining the Single Responsibility Principle.
 
-- The solution should build
-- The tests should all pass
-
-You are free to use any frameworks/NuGet packages that you see fit. You should plan to spend around 1 hour completing the exercise.
+Test data was used to implement the working of the class some unit tests were also implemented to cover a large possibility of inputs.
