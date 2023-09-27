@@ -1,6 +1,6 @@
 # Smartwyre Developer Test - Solved
 
-Hello, I present here the exercise solved following the instructions indicated in the readme.
+Hello, I present here the solved exercise following the instructions indicated in the readme.
 
 When refactoring, the SOLID principles were prioritized, making the code easy to read and making its testability simple. Consideration was also given to the scalability of the solution for when new types of incentives are introduced.
 
