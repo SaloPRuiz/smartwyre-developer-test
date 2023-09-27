@@ -1,12 +1,36 @@
-﻿using Smartwyre.DeveloperTest.Types;
+﻿using Smartwyre.DeveloperTest.IData;
+using Smartwyre.DeveloperTest.Types;
 
 namespace Smartwyre.DeveloperTest.Data;
 
-public class ProductDataStore
+public class ProductDataStore : IProductDataStore
 {
     public Product GetProduct(string productIdentifier)
     {
-        // Access database to retrieve account, code removed for brevity 
-        return new Product();
+        // Test - Rebate Objects
+        switch (productIdentifier)
+        {
+            case "1":
+                return new Product
+                {
+                    Price = 200,
+                    SupportedIncentives = SupportedIncentiveType.FixedRateRebate 
+                };
+                
+            case "2":
+                return new Product
+                {
+                    SupportedIncentives = SupportedIncentiveType.FixedCashAmount 
+                };
+            
+            case "3":
+                return new Product()
+                {
+                    SupportedIncentives = SupportedIncentiveType.AmountPerUom
+                };
+            
+            default:
+                return new Product();
+        }
     }
 }
